@@ -1,0 +1,2305 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Primary Meta Tags -->
+        <title>Mohamed Youssef Elhamaimy | Junior Front-End Developer</title>
+        <meta
+            name="title"
+            content="Mohamed Youssef Elhamaimy | Junior Front-End Developer"
+        />
+        <meta
+            name="description"
+            content="Portfolio of Mohamed Youssef Elhamaimy - Junior Front-End Developer & Information Systems student at Damietta University specializing in Vue.js, modern JavaScript, and responsive UI design."
+        />
+        <meta
+            name="keywords"
+            content="Mohamed Youssef Elhamaimy, Front-End Developer, Junior Web Developer, Vue.js, JavaScript, HTML5, CSS3, ITI, Damietta University, Portfolio"
+        />
+        <meta name="author" content="Mohamed Youssef Elhamaimy" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:title"
+            content="Mohamed Youssef Elhamaimy | Junior Front-End Developer"
+        />
+        <meta
+            property="og:description"
+            content="Motivated Junior Front-End Developer specializing in Vue.js, modern JavaScript, and clean responsive web interfaces."
+        />
+
+        <!-- Google Fonts: Plus Jakarta Sans, Inter, Fira Code -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- Favicon SVG -->
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366f1'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='800' font-size='48'>MY</text></svg>"
+        />
+    </head>
+    <body>
+        <!-- Ambient background glow effects -->
+        <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+        <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+        <div class="ambient-glow ambient-glow-3" aria-hidden="true"></div>
+
+        <!-- Header / Navigation Bar -->
+        <header class="navbar" id="navbar">
+            <div class="container nav-container">
+                <a
+                    href="#hero"
+                    class="brand-logo"
+                    aria-label="Mohamed Youssef Homepage"
+                >
+                    <span class="logo-symbol">&lt;</span>
+                    <span class="logo-text"
+                        >MY<span class="logo-accent">.dev</span></span
+                    >
+                    <span class="logo-symbol">/&gt;</span>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <nav
+                    class="nav-menu"
+                    id="nav-menu"
+                    aria-label="Main Navigation"
+                >
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#education" class="nav-link">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#experience" class="nav-link"
+                                >Experience</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Nav Actions (Theme toggle + CTA + Hamburger) -->
+                <div class="nav-actions">
+                    <!-- Theme Toggle Button -->
+                    <button
+                        class="theme-toggle-btn"
+                        id="theme-toggle"
+                        aria-label="Toggle light or dark theme"
+                        title="Toggle Theme"
+                    >
+                        <svg
+                            class="sun-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line
+                                x1="4.22"
+                                y1="4.22"
+                                x2="5.64"
+                                y2="5.64"
+                            ></line>
+                            <line
+                                x1="18.36"
+                                y1="18.36"
+                                x2="19.78"
+                                y2="19.78"
+                            ></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line
+                                x1="4.22"
+                                y1="19.78"
+                                x2="5.64"
+                                y2="18.36"
+                            ></line>
+                            <line
+                                x1="18.36"
+                                y1="5.64"
+                                x2="19.78"
+                                y2="4.22"
+                            ></line>
+                        </svg>
+                        <svg
+                            class="moon-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path
+                                d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                            ></path>
+                        </svg>
+                    </button>
+
+                    <!-- Quick CTA Button -->
+                    <a href="#contact" class="btn btn-outline nav-cta-btn">
+                        <span>Get in Touch</span>
+                    </a>
+
+                    <!-- Mobile Hamburger Toggle Button -->
+                    <button
+                        class="mobile-menu-btn"
+                        id="mobile-menu-toggle"
+                        aria-label="Toggle navigation menu"
+                        aria-expanded="false"
+                        aria-controls="mobile-drawer"
+                    >
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile Drawer Navigation -->
+        <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+            <div
+                class="mobile-drawer-backdrop"
+                id="mobile-drawer-backdrop"
+            ></div>
+            <div class="mobile-drawer-content">
+                <div class="mobile-drawer-header">
+                    <span class="logo-text"
+                        >MY<span class="logo-accent">.dev</span></span
+                    >
+                    <button
+                        class="mobile-drawer-close"
+                        id="mobile-drawer-close"
+                        aria-label="Close menu"
+                    >
+                        &times;
+                    </button>
+                </div>
+                <ul class="mobile-nav-list">
+                    <li>
+                        <a href="#about" class="mobile-nav-link">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#education" class="mobile-nav-link"
+                            >Education</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#experience" class="mobile-nav-link"
+                            >Experience</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#skills" class="mobile-nav-link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="mobile-nav-link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="mobile-nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="mobile-drawer-footer">
+                    <a
+                        href="mailto:mohamedyoussefelhamaimy@gmail.com"
+                        class="btn btn-primary w-full"
+                    >
+                        <span>Email Me Directly</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <!-- ========================================== -->
+            <!-- SECTION 1: HERO SECTION                    -->
+            <!-- ========================================== -->
+            <section class="section hero-section" id="hero">
+                <div class="container hero-container">
+                    <div class="hero-content reveal-on-scroll">
+                        <!-- Availability Badge -->
+                        <div class="status-pill">
+                            <span class="status-dot"></span>
+                            <span class="status-text"
+                                >Available for Junior Front-End Roles &amp;
+                                Opportunities</span
+                            >
+                        </div>
+
+                        <!-- Main Hero Headings -->
+                        <h1 class="hero-title">
+                            Hi, I'm
+                            <span class="gradient-text">Mohamed Youssef</span>
+                            <span class="hero-surname">Elhamaimy</span>
+                        </h1>
+
+                        <h2 class="hero-subtitle">
+                            <span class="code-bracket">&lt;</span>
+                            <span class="role-highlight"
+                                >Junior Front-End Developer</span
+                            >
+                            <span class="code-bracket">/&gt;</span>
+                            <!-- <span class="sub-role"
+                                >&amp; Information Systems Student</span
+                            > -->
+                        </h2>
+
+                        <!-- Location Badge -->
+                        <div class="hero-meta">
+                            <div class="meta-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="meta-icon"
+                                >
+                                    <path
+                                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                                    ></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Damietta, Egypt</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="meta-icon text-vue"
+                                >
+                                    <polygon points="12 2 2 22 22 22"></polygon>
+                                </svg>
+                                <span>Vue.js &amp; Modern Web Tech</span>
+                            </div>
+                        </div>
+
+                        <!-- Hero Intro Statement -->
+                        <p class="hero-description">
+                            A passionate, detail-oriented Junior Front-End
+                            Developer and Computer Science student at
+                            <strong>Damietta University</strong>. Dedicated to
+                            building clean, responsive user interfaces,
+                            mastering modern front-end technologies, and
+                            continuously improving skills through teamwork and
+                            AI-assisted workflows.
+                        </p>
+
+                        <!-- Hero Action Buttons -->
+                        <div class="hero-cta-group">
+                            <a href="#projects" class="btn btn-primary">
+                                <span>View Projects</span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline
+                                        points="12 5 19 12 12 19"
+                                    ></polyline>
+                                </svg>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <span>Contact Me</span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                    ></path>
+                                    <polyline
+                                        points="22,6 12,13 2,6"
+                                    ></polyline>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Social Links Quick Bar -->
+                        <div class="hero-socials">
+                            <span class="socials-label">Connect:</span>
+                            <a
+                                href="https://github.com/mohamed-youssef-dev"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="social-icon-btn"
+                                aria-label="GitHub Profile"
+                                title="GitHub"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/mohamed-youssef-elhamaimy"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="social-icon-btn"
+                                aria-label="LinkedIn Profile"
+                                title="LinkedIn"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                    ></path>
+                                    <rect
+                                        x="2"
+                                        y="9"
+                                        width="4"
+                                        height="12"
+                                    ></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a
+                                href="mailto:mohamedyoussefelhamaimy@gmail.com"
+                                class="social-icon-btn"
+                                aria-label="Email Mohamed"
+                                title="Email"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                    ></path>
+                                    <polyline
+                                        points="22,6 12,13 2,6"
+                                    ></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Hero Visual Profile Card / Avatar -->
+                    <div class="hero-visual reveal-on-scroll">
+                        <div class="profile-card-wrapper">
+                            <div class="profile-card-glow"></div>
+
+                            <div class="profile-card">
+                                <div class="profile-card-top">
+                                    <div class="window-dots">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                    </div>
+                                    <div class="window-tag">
+                                        junior-frontend.vue
+                                    </div>
+                                </div>
+
+                                <!-- Profile Photo / Developer Avatar Placeholder -->
+                                <div class="profile-avatar-container">
+                                    <div
+                                        class="avatar-orbit avatar-orbit-1"
+                                    ></div>
+                                    <div
+                                        class="avatar-orbit avatar-orbit-2"
+                                    ></div>
+                                    <div
+                                        class="profile-avatar-inner"
+                                        id="profile-avatar"
+                                    >
+                                        <img
+                                            src="./img/Me.jpg"
+                                            alt="Mohamed Youssef Elhamaimy - Junior Front-End Developer"
+                                            class="profile-avatar-img"
+                                        />
+                                    </div>
+                                    <!-- Interactive floating skill badges -->
+                                    <div
+                                        class="floating-badge badge-vue"
+                                        title="Vue.js"
+                                    >
+                                        <span class="badge-icon">
+                                            <img
+                                                src="./img/Vue.js Icon.svg "
+                                                alt="Vue.js"
+                                                height="18"
+                                                width="18"
+                                            />
+                                        </span>
+
+                                        <span class="badge-text">Vue.js</span>
+                                    </div>
+                                    <div
+                                        class="floating-badge badge-js"
+                                        title="JavaScript"
+                                    >
+                                        <span class="badge-icon">JS</span>
+                                        <span class="badge-text">ES6+</span>
+                                    </div>
+                                    <div
+                                        class="floating-badge badge-html"
+                                        title="HTML5/CSS3"
+                                    >
+                                        <span class="badge-icon">🎨</span>
+                                        <span class="badge-text">UI/UX</span>
+                                    </div>
+                                </div>
+
+                                <!-- Profile Meta info -->
+                                <div class="profile-card-info">
+                                    <h3 class="profile-name">
+                                        Mohamed Youssef
+                                    </h3>
+                                    <p class="profile-track">
+                                        Computer Science • 2027
+                                    </p>
+                                    <div class="profile-tags">
+                                        <span class="tag">ITI Trainee</span>
+                                        <span class="tag">Front-End</span>
+                                        <span class="tag">AI-Assisted</span>
+                                    </div>
+                                </div>
+
+                                <!-- Code snippet card accent -->
+                                <div class="profile-code-snippet">
+                                    <code>
+                                        <span class="code-kw">const</span>
+                                        developer = {<br />
+                                        &nbsp;&nbsp;name:
+                                        <span class="code-str"
+                                            >'Mohamed Youssef'</span
+                                        >,<br />
+                                        &nbsp;&nbsp;role:
+                                        <span class="code-str"
+                                            >'Junior Front-End'</span
+                                        >,<br />
+                                        &nbsp;&nbsp;mindset:
+                                        <span class="code-str"
+                                            >'Continuous Learning'</span
+                                        ><br />
+                                        };
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 2: ABOUT ME SECTION                -->
+            <!-- ========================================== -->
+            <section class="section about-section" id="about">
+                <div class="container">
+                    <!-- Section Header -->
+                    <div class="section-header reveal-on-scroll">
+                        <div class="section-badge">
+                            <span class="badge-bullet"></span>
+                            <span>Who I Am</span>
+                        </div>
+                        <h2 class="section-title">
+                            About <span class="gradient-text">Me</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            Dedicated to crafting intuitive interfaces, solving
+                            problems, and continuously elevating technical
+                            craft.
+                        </p>
+                    </div>
+
+                    <div class="about-grid">
+                        <!-- Bio Column -->
+                        <div class="about-bio-card glass-card reveal-on-scroll">
+                            <h3 class="bio-heading">
+                                A Passionate Learner &amp; Collaborative Builder
+                            </h3>
+
+                            <p class="bio-text">
+                                I am a
+                                <strong>Junior Front-End Developer</strong>
+                                currently studying Information Systems at the
+                                <strong
+                                    >Faculty of Computers and Artificial
+                                    Intelligence, Damietta University</strong
+                                >. My enthusiasm lies at the crossroads of clean
+                                code, interactive web development, and modern
+                                user interface design.
+                            </p>
+
+                            <p class="bio-text">
+                                I approach software development with a genuine
+                                curiosity and a structured problem-solving
+                                mindset. I have a strong preference for
+                                <strong>collaborative team environments</strong
+                                >, where open communication, code reviews, and
+                                mutual learning drive impactful digital
+                                experiences.
+                            </p>
+
+                            <p class="bio-text">
+                                Passionate about the possibilities of
+                                <strong
+                                    >Artificial Intelligence in Web
+                                    Development</strong
+                                >, I actively integrate modern AI tools into my
+                                daily learning and development workflows to
+                                explore efficient solutions, master complex
+                                concepts, and boost productivity.
+                            </p>
+
+                            <p class="bio-text">
+                                With a commitment to continuous
+                                self-improvement, my long-term ambition is to
+                                expand into
+                                <strong>Node.js and backend engineering</strong>
+                                to evolve into a versatile Full-Stack Developer,
+                                seeking my first professional opportunity to
+                                contribute and grow on a global stage.
+                            </p>
+
+                            <!-- Quick Information Strip -->
+                            <div class="about-quick-facts">
+                                <div class="fact-item">
+                                    <span class="fact-label">University</span>
+                                    <span class="fact-value"
+                                        >Damietta University (FCAI)</span
+                                    >
+                                </div>
+                                <div class="fact-item">
+                                    <span class="fact-label">Major</span>
+                                    <span class="fact-value"
+                                        >Computer Science
+                                    </span>
+                                </div>
+                                <div class="fact-item">
+                                    <span class="fact-label">English</span>
+                                    <span class="fact-value"
+                                        >Intermediate (Technical Docs &amp;
+                                        Tutorials)</span
+                                    >
+                                </div>
+                                <div class="fact-item">
+                                    <span class="fact-label">Focus</span>
+                                    <span class="fact-value"
+                                        >Vue.js &amp; Modern Front-End</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Feature Highlights Cards -->
+                        <div class="about-highlights-grid">
+                            <div
+                                class="feature-card glass-card reveal-on-scroll"
+                            >
+                                <div class="feature-icon icon-indigo">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <polyline
+                                            points="16 18 22 12 16 6"
+                                        ></polyline>
+                                        <polyline
+                                            points="8 6 2 12 8 18"
+                                        ></polyline>
+                                    </svg>
+                                </div>
+                                <h4 class="feature-title">
+                                    Front-End &amp; UI Passion
+                                </h4>
+                                <p class="feature-desc">
+                                    Dedicated to translating ideas into clean,
+                                    semantic HTML5, modern CSS3, and dynamic
+                                    Vue.js components.
+                                </p>
+                            </div>
+
+                            <div
+                                class="feature-card glass-card reveal-on-scroll"
+                            >
+                                <div class="feature-icon icon-cyan">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path
+                                            d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                                        ></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path
+                                            d="M23 21v-2a4 4 0 0 0-3-3.87"
+                                        ></path>
+                                        <path
+                                            d="M16 3.13a4 4 0 0 1 0 7.75"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <h4 class="feature-title">
+                                    Teamwork &amp; Detail
+                                </h4>
+                                <p class="feature-desc">
+                                    Strong attention to detail, respectful
+                                    communication, and a collaborative spirit in
+                                    team project settings.
+                                </p>
+                            </div>
+
+                            <div
+                                class="feature-card glass-card reveal-on-scroll"
+                            >
+                                <div class="feature-icon icon-vue">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <polygon
+                                            points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
+                                        ></polygon>
+                                    </svg>
+                                </div>
+                                <h4 class="feature-title">
+                                    AI-Assisted Workflow
+                                </h4>
+                                <p class="feature-desc">
+                                    Utilizes modern AI tools to accelerate
+                                    learning, debug edge cases, and enhance
+                                    daily coding productivity.
+                                </p>
+                            </div>
+
+                            <div
+                                class="feature-card glass-card reveal-on-scroll"
+                            >
+                                <div class="feature-icon icon-emerald">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline
+                                            points="12 6 12 12 14 14"
+                                        ></polyline>
+                                    </svg>
+                                </div>
+                                <h4 class="feature-title">Continuous Growth</h4>
+                                <p class="feature-desc">
+                                    Consistently sharpening fundamentals and
+                                    advancing along a clear roadmap towards
+                                    Full-Stack development.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 3: EDUCATION                       -->
+            <!-- ========================================== -->
+            <section class="section education-section" id="education">
+                <div class="container">
+                    <div class="section-header reveal-on-scroll">
+                        <div class="section-badge">
+                            <span class="badge-bullet"></span>
+                            <span>Academic Foundation</span>
+                        </div>
+                        <h2 class="section-title">
+                            My <span class="gradient-text">Education</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            Academic degree and core computing curriculum at
+                            Damietta University.
+                        </p>
+                    </div>
+
+                    <div class="single-showcase-container">
+                        <!-- Education Card -->
+                        <div
+                            class="academic-card glass-card reveal-on-scroll showcase-card"
+                        >
+                            <div
+                                class="card-accent-bar bg-gradient-indigo"
+                            ></div>
+                            <div class="academic-header">
+                                <div class="academic-icon-box">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="30"
+                                        height="30"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path
+                                            d="M22 10v6M2 10l10-5 10 5-10 5z"
+                                        ></path>
+                                        <path
+                                            d="M6 12v5c3 3 9 3 12 0v-5"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="card-category-label"
+                                        >University Degree</span
+                                    >
+                                    <h3 class="card-entity-title">
+                                        Damietta University
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="academic-details">
+                                <div class="detail-row">
+                                    <span class="detail-label">Faculty:</span>
+                                    <span class="detail-value"
+                                        >Faculty of Computers and Artificial
+                                        Intelligence</span
+                                    >
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label"
+                                        >Department:</span
+                                    >
+                                    <span class="detail-value"
+                                        >Information Systems (IS)</span
+                                    >
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label"
+                                        >Expected Graduation:</span
+                                    >
+                                    <span class="detail-value highlight-badge"
+                                        >2027</span
+                                    >
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label"
+                                        >Cumulative GPA:</span
+                                    >
+                                    <span class="detail-value gpa-badge"
+                                        >3.14</span
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="academic-footer">
+                                <span class="academic-note">
+                                    Studying core computing fields including
+                                    Information Systems analysis, database
+                                    architecture, software engineering
+                                    principles, algorithms, and web
+                                    technologies.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 4: EXPERIENCE                      -->
+            <!-- ========================================== -->
+            <section class="section experience-section" id="experience">
+                <div class="container">
+                    <div class="section-header reveal-on-scroll">
+                        <div class="section-badge">
+                            <span class="badge-bullet"></span>
+                            <span>Specialized Program</span>
+                        </div>
+                        <h2 class="section-title">
+                            Professional
+                            <span class="gradient-text">Experience</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            Intensive hands-on technical training track centered
+                            on front-end web development.
+                        </p>
+                    </div>
+
+                    <div class="single-showcase-container">
+                        <!-- Training Card -->
+                        <div
+                            class="academic-card glass-card reveal-on-scroll showcase-card"
+                        >
+                            <div class="card-accent-bar bg-gradient-vue"></div>
+                            <div class="academic-header">
+                                <div class="icon-iti-bg">
+                                    <img
+                                        src="img/ITI Logo.png"
+                                        alt="ITI Logo"
+                                        width="50"
+                                        height="70"
+                                    />
+                                </div>
+                                <div>
+                                    <span class="card-category-label"
+                                        >Intensive Summer Program</span
+                                    >
+                                    <h3 class="card-entity-title">
+                                        ITI Summer Training
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="academic-details">
+                                <div class="detail-row">
+                                    <span class="detail-label"
+                                        >Institution:</span
+                                    >
+                                    <span class="detail-value"
+                                        >Information Technology Institute
+                                        (ITI)</span
+                                    >
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Program</span>
+                                    <span class="detail-value"
+                                        >Summer Training for Universities
+                                        Students</span
+                                    >
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Duration:</span>
+                                    <span class="detail-value">1 Month</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Track:</span>
+                                    <span class="detail-value"
+                                        >Front-End Development</span
+                                    >
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label"
+                                        >Main Technology:</span
+                                    >
+                                    <span
+                                        class="detail-value highlight-badge text-vue"
+                                        >Vue.js</span
+                                    >
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label"
+                                        >Training Type:</span
+                                    >
+                                    <span class="detail-value">Hybrid</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Status:</span>
+                                    <span class="detail-value status-completed">
+                                        <span class="check-icon">✓</span>
+                                        Completed
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="academic-footer">
+                                <div class="certificate-badge">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <circle cx="12" cy="8" r="7"></circle>
+                                        <polyline
+                                            points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"
+                                        ></polyline>
+                                    </svg>
+                                    <span
+                                        >Training Completed — Certificate
+                                        Pending Issuance</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 5: SKILLS (Technical & Soft Skills)-->
+            <!-- ========================================== -->
+            <section class="section skills-section" id="skills">
+                <div class="container">
+                    <div class="section-header reveal-on-scroll">
+                        <div class="section-badge">
+                            <span class="badge-bullet"></span>
+                            <span>Tech Stack &amp; Strengths</span>
+                        </div>
+                        <h2 class="section-title">
+                            Skills &amp;
+                            <span class="gradient-text">Competencies</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            Comprehensive technical skills, Vue.js concepts,
+                            core JavaScript mastery, and professional
+                            collaborative soft skills.
+                        </p>
+                    </div>
+
+                    <!-- Skills Category Tabs -->
+                    <div class="skills-tabs reveal-on-scroll">
+                        <button class="skills-tab active" data-filter="all">
+                            All Skills
+                        </button>
+                        <button class="skills-tab" data-filter="frontend">
+                            Front-End Core
+                        </button>
+                        <button class="skills-tab" data-filter="vue">
+                            Vue.js Deep Dive
+                        </button>
+                        <button class="skills-tab" data-filter="js">
+                            JavaScript (ES6+)
+                        </button>
+                        <button class="skills-tab" data-filter="tools">
+                            Version &amp; APIs
+                        </button>
+                        <button class="skills-tab" data-filter="soft">
+                            Soft Skills
+                        </button>
+                        <button class="skills-tab" data-filter="future">
+                            Future Roadmap
+                        </button>
+                    </div>
+
+                    <div class="skills-matrix">
+                        <!-- Category 1: Front-End Core -->
+                        <div
+                            class="skill-category-card glass-card reveal-on-scroll"
+                            data-category="frontend"
+                        >
+                            <div class="category-card-header">
+                                <div class="category-icon icon-indigo">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="22"
+                                        height="22"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <rect
+                                            x="2"
+                                            y="3"
+                                            width="20"
+                                            height="14"
+                                            rx="2"
+                                            ry="2"
+                                        ></rect>
+                                        <line
+                                            x1="8"
+                                            y1="21"
+                                            x2="16"
+                                            y2="21"
+                                        ></line>
+                                        <line
+                                            x1="12"
+                                            y1="17"
+                                            x2="12"
+                                            y2="21"
+                                        ></line>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="category-title">
+                                        Front-End Development
+                                    </h3>
+                                    <span class="category-subtitle"
+                                        >Core technologies &amp; UI
+                                        building</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="skill-badges-wrapper">
+                                <div class="skill-chip">
+                                    <span class="chip-dot"></span>HTML5
+                                </div>
+                                <div class="skill-chip">
+                                    <span class="chip-dot"></span>CSS3
+                                </div>
+                                <div class="skill-chip">
+                                    <span class="chip-dot"></span>JavaScript
+                                    (ES6+)
+                                </div>
+                                <div class="skill-chip">
+                                    <span class="chip-dot"></span>Bootstrap
+                                </div>
+                                <div class="skill-chip featured-chip">
+                                    <span class="chip-dot"></span>Vue.js
+                                </div>
+                                <div class="skill-chip">
+                                    <span class="chip-dot"></span>Vite
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category 2: Vue.js Concepts Deep Dive -->
+                        <div
+                            class="skill-category-card glass-card reveal-on-scroll"
+                            data-category="vue"
+                        >
+                            <div class="category-card-header">
+                                <div class="category-icon icon-vue">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="22"
+                                        height="22"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <polygon
+                                            points="12 2 2 22 22 22"
+                                        ></polygon>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="category-title">
+                                        Vue.js Practical Knowledge
+                                    </h3>
+                                    <span class="category-subtitle"
+                                        >Components, reactivity &amp;
+                                        routing</span
+                                    >
+                                </div>
+                            </div>
+                            <p class="category-intro-text">
+                                Hands-on concepts studied and implemented during
+                                ITI Summer Training:
+                            </p>
+                            <div class="skill-badges-wrapper">
+                                <div class="concept-tag">Vue Components</div>
+                                <div class="concept-tag">Props</div>
+                                <div class="concept-tag">Emits</div>
+                                <div class="concept-tag">Slots</div>
+                                <div class="concept-tag">Vue Router</div>
+                                <div class="concept-tag">Directives</div>
+                                <div class="concept-tag code-tag">v-model</div>
+                                <div class="concept-tag code-tag">v-bind</div>
+                                <div class="concept-tag code-tag">v-on</div>
+                                <div class="concept-tag">
+                                    Computed Properties
+                                </div>
+                                <div class="concept-tag">Watchers</div>
+                                <div class="concept-tag">
+                                    Conditional Rendering
+                                </div>
+                                <div class="concept-tag">List Rendering</div>
+                                <div class="concept-tag">
+                                    Dynamic Components
+                                </div>
+                                <div class="concept-tag">
+                                    Component Communication
+                                </div>
+                                <div class="concept-tag">Options API</div>
+                                <div class="concept-tag">Vue with Vite</div>
+                            </div>
+                        </div>
+
+                        <!-- Category 3: JavaScript Deep Dive -->
+                        <div
+                            class="skill-category-card glass-card reveal-on-scroll"
+                            data-category="js"
+                        >
+                            <div class="category-card-header">
+                                <div class="category-icon icon-yellow">
+                                    <span class="js-icon-text">JS</span>
+                                </div>
+                                <div>
+                                    <h3 class="category-title">
+                                        JavaScript Core Mastery
+                                    </h3>
+                                    <span class="category-subtitle"
+                                        >DOM, async patterns &amp; logic</span
+                                    >
+                                </div>
+                            </div>
+                            <p class="category-intro-text">
+                                Fundamental programming concepts and ES6+
+                                features:
+                            </p>
+                            <div class="skill-badges-wrapper">
+                                <div class="concept-tag">
+                                    Variables &amp; Scope
+                                </div>
+                                <div class="concept-tag">
+                                    Functions &amp; Closures
+                                </div>
+                                <div class="concept-tag">
+                                    Arrays &amp; Array Methods
+                                </div>
+                                <div class="concept-tag">
+                                    Objects &amp; Prototypes
+                                </div>
+                                <div class="concept-tag">DOM Manipulation</div>
+                                <div class="concept-tag">
+                                    Events &amp; Event Handling
+                                </div>
+                                <div class="concept-tag">
+                                    LocalStorage &amp; SessionStorage
+                                </div>
+                                <div class="concept-tag">
+                                    Fetch API &amp; Async/Await
+                                </div>
+                                <div class="concept-tag">JSON Parsing</div>
+                                <div class="concept-tag">
+                                    Regular Expressions (RegEx)
+                                </div>
+                                <div class="concept-tag">Date &amp; Timers</div>
+                                <div class="concept-tag">ES6+ Features</div>
+                            </div>
+                        </div>
+
+                        <!-- Category 4: Version Control & APIs -->
+                        <div
+                            class="skill-category-card glass-card reveal-on-scroll"
+                            data-category="tools"
+                        >
+                            <div class="category-card-header">
+                                <div class="category-icon icon-cyan">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="22"
+                                        height="22"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <circle cx="18" cy="18" r="3"></circle>
+                                        <circle cx="6" cy="6" r="3"></circle>
+                                        <path
+                                            d="M13 6h3a2 2 0 0 1 2 2v7"
+                                        ></path>
+                                        <line
+                                            x1="6"
+                                            y1="9"
+                                            x2="6"
+                                            y2="21"
+                                        ></line>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="category-title">
+                                        Version Control &amp; APIs
+                                    </h3>
+                                    <span class="category-subtitle"
+                                        >Collaboration &amp; data exchange</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="skill-badges-wrapper">
+                                <div class="skill-chip">
+                                    <span class="chip-dot"></span>Git
+                                </div>
+                                <div class="skill-chip">
+                                    <span class="chip-dot"></span>GitHub
+                                </div>
+                                <div class="skill-chip">
+                                    <span class="chip-dot"></span>REST APIs
+                                </div>
+                                <div class="skill-chip">
+                                    <span class="chip-dot"></span>Fetch API
+                                </div>
+                                <div class="skill-chip">
+                                    <span class="chip-dot"></span>JSON
+                                </div>
+                            </div>
+                            <div class="other-knowledge-box">
+                                <span class="sub-label"
+                                    >Other Technical Foundations:</span
+                                >
+                                <div class="skill-badges-wrapper mt-2">
+                                    <div class="skill-chip">
+                                        <span class="chip-dot"></span>Python
+                                    </div>
+                                    <div class="skill-chip">
+                                        <span class="chip-dot"></span>System
+                                        Design
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category 5: Professional Soft Skills (Merged) -->
+                        <div
+                            class="skill-category-card glass-card reveal-on-scroll"
+                            data-category="soft"
+                        >
+                            <div class="category-card-header">
+                                <div class="category-icon icon-emerald">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="22"
+                                        height="22"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path
+                                            d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                                        ></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path
+                                            d="M23 21v-2a4 4 0 0 0-3-3.87"
+                                        ></path>
+                                        <path
+                                            d="M16 3.13a4 4 0 0 1 0 7.75"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="category-title">
+                                        Professional Soft Skills
+                                    </h3>
+                                    <span class="category-subtitle"
+                                        >Teamwork, mindsets &amp;
+                                        collaboration</span
+                                    >
+                                </div>
+                            </div>
+                            <p class="category-intro-text">
+                                Key interpersonal strengths and work ethics that
+                                support productive development:
+                            </p>
+                            <div class="skill-badges-wrapper">
+                                <div class="skill-chip soft-chip">
+                                    <span class="soft-badge-icon">🧩</span
+                                    >Problem Solving
+                                </div>
+                                <div class="skill-chip soft-chip">
+                                    <span class="soft-badge-icon">⚡</span>Fast
+                                    Learning
+                                </div>
+                                <div class="skill-chip soft-chip">
+                                    <span class="soft-badge-icon">🤝</span
+                                    >Teamwork &amp; Collaboration
+                                </div>
+                                <div class="skill-chip soft-chip">
+                                    <span class="soft-badge-icon">🔍</span
+                                    >Attention to Detail
+                                </div>
+                                <div class="skill-chip soft-chip">
+                                    <span class="soft-badge-icon">💡</span
+                                    >Creativity
+                                </div>
+                                <div class="skill-chip soft-chip">
+                                    <span class="soft-badge-icon">📈</span
+                                    >Continuous Learning
+                                </div>
+                            </div>
+                            <div class="soft-note-box">
+                                <span
+                                    >Thrives in collaborative team environments
+                                    with respectful communication and continuous
+                                    improvement.</span
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Category 6: Future Direction / Learning Goals -->
+                        <div
+                            class="skill-category-card glass-card future-learning-card reveal-on-scroll"
+                            data-category="future"
+                        >
+                            <div class="category-card-header">
+                                <div class="category-icon icon-purple">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="22"
+                                        height="22"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                        ></polygon>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="future-pill">
+                                        Learning Goals
+                                    </div>
+                                    <h3 class="category-title">
+                                        Currently Learning / Future Direction
+                                    </h3>
+                                </div>
+                            </div>
+                            <p class="category-intro-text">
+                                Actively exploring and setting foundation for
+                                future Full-Stack proficiency:
+                            </p>
+                            <div class="skill-badges-wrapper">
+                                <div class="future-chip">
+                                    <span class="future-icon">🎯</span>
+                                    <span>Node.js (Next Step)</span>
+                                </div>
+                                <div class="future-chip">
+                                    <span class="future-icon">⚙️</span>
+                                    <span>Backend Development</span>
+                                </div>
+                                <div class="future-chip">
+                                    <span class="future-icon">🚀</span>
+                                    <span>Full-Stack Architecture</span>
+                                </div>
+                            </div>
+                            <div class="future-disclaimer">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="14"
+                                    height="14"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                                    <line
+                                        x1="12"
+                                        y1="16"
+                                        x2="12.01"
+                                        y2="16"
+                                    ></line>
+                                </svg>
+                                <span
+                                    >Targeted future learning milestones to
+                                    expand front-end proficiency into full-stack
+                                    engineering.</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 6: PROJECTS SECTION                -->
+            <!-- ========================================== -->
+            <section class="section projects-section" id="projects">
+                <div class="container">
+                    <div class="section-header reveal-on-scroll">
+                        <div class="section-badge">
+                            <span class="badge-bullet"></span>
+                            <span>Featured Work</span>
+                        </div>
+                        <h2 class="section-title">
+                            Projects &amp;
+                            <span class="gradient-text">Practices</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            Hands-on applications built to practice web
+                            development principles, responsive UI, and component
+                            structuring.
+                        </p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <!-- Confirmed Project: Front-End E-commerce Website -->
+                        <article
+                            class="project-card glass-card reveal-on-scroll"
+                        >
+                            <div class="project-card-image-wrap">
+                                <!-- Visual Mockup Canvas -->
+                                <div class="project-preview-mockup">
+                                    <div class="mockup-header">
+                                        <div class="mockup-dots">
+                                            <span></span><span></span
+                                            ><span></span>
+                                        </div>
+                                        <div class="mockup-bar">
+                                            ecommerce-storefront.local
+                                        </div>
+                                    </div>
+                                    <div class="mockup-body">
+                                        <div class="mockup-nav">
+                                            <div class="mockup-logo">
+                                                ShopStore
+                                            </div>
+                                            <div class="mockup-menu">
+                                                <span></span><span></span
+                                                ><span></span>
+                                            </div>
+                                        </div>
+                                        <div class="mockup-hero-banner">
+                                            <span class="banner-badge"
+                                                >Featured Collection</span
+                                            >
+                                            <h4>Modern Minimalist Gear</h4>
+                                        </div>
+                                        <div class="mockup-cards-row">
+                                            <div class="mockup-item">
+                                                <div
+                                                    class="item-img img-1"
+                                                ></div>
+                                                <div class="item-line"></div>
+                                                <div class="item-btn"></div>
+                                            </div>
+                                            <div class="mockup-item">
+                                                <div
+                                                    class="item-img img-2"
+                                                ></div>
+                                                <div class="item-line"></div>
+                                                <div class="item-btn"></div>
+                                            </div>
+                                            <div
+                                                class="mockup-item hide-mobile"
+                                            >
+                                                <div
+                                                    class="item-img img-3"
+                                                ></div>
+                                                <div class="item-line"></div>
+                                                <div class="item-btn"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-badge-tag">
+                                    Front-End Project
+                                </div>
+                            </div>
+
+                            <div class="project-card-content">
+                                <div class="project-meta-row">
+                                    <span class="project-type"
+                                        >Web Development Practice</span
+                                    >
+                                    <span class="project-status"
+                                        >Completed Front-End</span
+                                    >
+                                </div>
+
+                                <h3 class="project-title">
+                                    E-commerce Website
+                                </h3>
+
+                                <p class="project-description">
+                                    A simple E-commerce website created as a
+                                    Front-End development project to practice
+                                    and demonstrate Web Development skills,
+                                    layout composition, responsive structuring,
+                                    and clean styling.
+                                </p>
+
+                                <div class="project-tech-stack">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag"
+                                        >Responsive Design</span
+                                    >
+                                    <span class="tech-tag">UI Structuring</span>
+                                </div>
+
+                                <!-- Project Action Links (Code & Live Demo) -->
+                                <div class="project-actions">
+                                    <a
+                                        href="https://github.com/mohamed-youssef-dev"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="btn btn-sm btn-outline project-btn"
+                                        aria-label="View Source Code on GitHub"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="18"
+                                            height="18"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                            ></path>
+                                        </svg>
+                                        <span>Code</span>
+                                    </a>
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="btn btn-sm btn-primary project-btn"
+                                        aria-label="View Live Demo"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="18"
+                                            height="18"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                                            ></path>
+                                            <polyline
+                                                points="15 3 21 3 21 9"
+                                            ></polyline>
+                                            <line
+                                                x1="10"
+                                                y1="14"
+                                                x2="21"
+                                                y2="3"
+                                            ></line>
+                                        </svg>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+
+                                <div class="project-footer-note">
+                                    <div class="note-pill">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="14"
+                                            height="14"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <circle
+                                                cx="12"
+                                                cy="12"
+                                                r="10"
+                                            ></circle>
+                                            <line
+                                                x1="12"
+                                                y1="16"
+                                                x2="12"
+                                                y2="12"
+                                            ></line>
+                                            <line
+                                                x1="12"
+                                                y1="8"
+                                                x2="12.01"
+                                                y2="8"
+                                            ></line>
+                                        </svg>
+                                        <span
+                                            >Developed as a hands-on learning
+                                            project to solidify front-end design
+                                            &amp; code principles.</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Ongoing & Upcoming Projects Card -->
+                        <div
+                            class="upcoming-project-card glass-card reveal-on-scroll"
+                        >
+                            <div class="upcoming-icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                    ></polygon>
+                                </svg>
+                            </div>
+
+                            <div class="upcoming-content">
+                                <span class="upcoming-badge"
+                                    >Work In Progress</span
+                                >
+                                <h3 class="upcoming-title">
+                                    More Projects In Development
+                                </h3>
+                                <p class="upcoming-desc">
+                                    Currently building additional Vue.js and
+                                    modern JavaScript web applications. As
+                                    projects are finalized and polished, they
+                                    will be published here with source code and
+                                    documentation.
+                                </p>
+
+                                <div class="upcoming-focus-list">
+                                    <div class="focus-item">
+                                        <span class="focus-dot"></span>
+                                        <span
+                                            >Vue.js 3 Component
+                                            Applications</span
+                                        >
+                                    </div>
+                                    <div class="focus-item">
+                                        <span class="focus-dot"></span>
+                                        <span
+                                            >Interactive Responsive
+                                            Dashboards</span
+                                        >
+                                    </div>
+                                    <div class="focus-item">
+                                        <span class="focus-dot"></span>
+                                        <span
+                                            >REST API Data Integration
+                                            Practices</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="upcoming-footer">
+                                <span class="pulse-indicator"></span>
+                                <span
+                                    >Constantly coding &amp; expanding
+                                    portfolio</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 7: CONTACT SECTION                 -->
+            <!-- ========================================== -->
+            <section class="section contact-section" id="contact">
+                <div class="container">
+                    <div class="section-header reveal-on-scroll">
+                        <div class="section-badge">
+                            <span class="badge-bullet"></span>
+                            <span>Let's Connect</span>
+                        </div>
+                        <h2 class="section-title">
+                            Get In <span class="gradient-text">Touch</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            Have an open Junior Front-End position, internship,
+                            or question? Feel free to reach out directly.
+                        </p>
+                    </div>
+
+                    <div class="contact-grid">
+                        <!-- Contact Info Column -->
+                        <div
+                            class="contact-info-card glass-card reveal-on-scroll"
+                        >
+                            <h3 class="contact-heading">Contact Information</h3>
+                            <p class="contact-subtext">
+                                I am actively seeking junior front-end
+                                development opportunities. You can email me
+                                directly or connect through my profiles below.
+                            </p>
+
+                            <div class="contact-methods">
+                                <!-- Email Item -->
+                                <div class="contact-method-item">
+                                    <div class="method-icon-box icon-indigo">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                            ></path>
+                                            <polyline
+                                                points="22,6 12,13 2,6"
+                                            ></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="method-content">
+                                        <span class="method-label"
+                                            >Direct Email</span
+                                        >
+                                        <a
+                                            href="mailto:mohamedyoussefelhamaimy@gmail.com"
+                                            class="method-link"
+                                            >mohamedyoussefelhamaimy@gmail.com</a
+                                        >
+                                    </div>
+                                    <button
+                                        class="copy-email-btn"
+                                        id="copy-email-btn"
+                                        title="Copy email address"
+                                        aria-label="Copy email"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <rect
+                                                x="9"
+                                                y="9"
+                                                width="13"
+                                                height="13"
+                                                rx="2"
+                                                ry="2"
+                                            ></rect>
+                                            <path
+                                                d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                                            ></path>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <!-- Location Item -->
+                                <div class="contact-method-item">
+                                    <div class="method-icon-box icon-cyan">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                                            ></path>
+                                            <circle
+                                                cx="12"
+                                                cy="10"
+                                                r="3"
+                                            ></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="method-content">
+                                        <span class="method-label"
+                                            >Location</span
+                                        >
+                                        <span class="method-text"
+                                            >Damietta, Egypt</span
+                                        >
+                                    </div>
+                                </div>
+
+                                <!-- GitHub Item -->
+                                <div class="contact-method-item">
+                                    <div class="method-icon-box icon-purple">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                    <div class="method-content">
+                                        <span class="method-label">GitHub</span>
+                                        <a
+                                            href="https://github.com/mohamed-youssef-dev"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="method-link"
+                                            >github.com/mohamed-youssef-dev</a
+                                        >
+                                    </div>
+                                </div>
+
+                                <!-- LinkedIn Item -->
+                                <div class="contact-method-item">
+                                    <div class="method-icon-box icon-blue">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                            ></path>
+                                            <rect
+                                                x="2"
+                                                y="9"
+                                                width="4"
+                                                height="12"
+                                            ></rect>
+                                            <circle
+                                                cx="4"
+                                                cy="4"
+                                                r="2"
+                                            ></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="method-content">
+                                        <span class="method-label"
+                                            >LinkedIn</span
+                                        >
+                                        <a
+                                            href="https://www.linkedin.com/in/mohamed-youssef-elhamaimy"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="method-link"
+                                            >linkedin.com/in/mohamed-youssef-elhamaimy</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form Column -->
+                        <div
+                            class="contact-form-card glass-card reveal-on-scroll"
+                        >
+                            <h3 class="contact-heading">Send a Message</h3>
+                            <p class="contact-subtext">
+                                Fill out this quick form and I will get back to
+                                you promptly.
+                            </p>
+
+                            <form
+                                class="contact-form"
+                                id="contact-form"
+                                novalidate
+                            >
+                                <div class="form-group">
+                                    <label for="contact-name" class="form-label"
+                                        >Your Name
+                                        <span class="required">*</span></label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="contact-name"
+                                        name="name"
+                                        class="form-input"
+                                        placeholder="e.g. John Doe"
+                                        required
+                                    />
+                                    <span class="form-error" id="name-error"
+                                        >Please enter your name</span
+                                    >
+                                </div>
+
+                                <div class="form-group">
+                                    <label
+                                        for="contact-email"
+                                        class="form-label"
+                                        >Email Address
+                                        <span class="required">*</span></label
+                                    >
+                                    <input
+                                        type="email"
+                                        id="contact-email"
+                                        name="email"
+                                        class="form-input"
+                                        placeholder="e.g. john@example.com"
+                                        required
+                                    />
+                                    <span class="form-error" id="email-error"
+                                        >Please enter a valid email
+                                        address</span
+                                    >
+                                </div>
+
+                                <div class="form-group">
+                                    <label
+                                        for="contact-subject"
+                                        class="form-label"
+                                        >Subject</label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="contact-subject"
+                                        name="subject"
+                                        class="form-input"
+                                        placeholder="e.g. Junior Front-End Role / Collaboration"
+                                    />
+                                </div>
+
+                                <div class="form-group">
+                                    <label
+                                        for="contact-message"
+                                        class="form-label"
+                                        >Message
+                                        <span class="required">*</span></label
+                                    >
+                                    <textarea
+                                        id="contact-message"
+                                        name="message"
+                                        class="form-textarea"
+                                        rows="4"
+                                        placeholder="Type your message here..."
+                                        required
+                                    ></textarea>
+                                    <span class="form-error" id="message-error"
+                                        >Please write a message</span
+                                    >
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary w-full"
+                                    id="form-submit-btn"
+                                >
+                                    <span>Send Message</span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="18"
+                                        height="18"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <line
+                                            x1="22"
+                                            y1="2"
+                                            x2="11"
+                                            y2="13"
+                                        ></line>
+                                        <polygon
+                                            points="22 2 15 22 11 13 2 9 22 2"
+                                        ></polygon>
+                                    </svg>
+                                </button>
+
+                                <!-- Form Success Feedback -->
+                                <div
+                                    class="form-feedback form-feedback-success"
+                                    id="form-success-msg"
+                                >
+                                    <span class="feedback-icon">✓</span>
+                                    <span
+                                        >Thank you! Your message was received. I
+                                        will reply to you soon.</span
+                                    >
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ========================================== -->
+        <!-- SECTION 8: FOOTER                          -->
+        <!-- ========================================== -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a href="#hero" class="brand-logo">
+                            <span class="logo-symbol">&lt;</span>
+                            <span class="logo-text"
+                                >MY<span class="logo-accent">.dev</span></span
+                            >
+                            <span class="logo-symbol">/&gt;</span>
+                        </a>
+                        <p class="footer-tagline">
+                            Junior Front-End Developer &amp; Information Systems
+                            Student • Damietta, Egypt
+                        </p>
+                    </div>
+
+                    <div class="footer-nav">
+                        <a href="#about">About</a>
+                        <a href="#education">Education</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+
+                    <div class="footer-socials">
+                        <a
+                            href="https://github.com/mohamed-youssef-dev"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="footer-social-btn"
+                            aria-label="GitHub Profile"
+                            title="GitHub"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                ></path>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/mohamed-youssef-elhamaimy"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="footer-social-btn"
+                            aria-label="LinkedIn Profile"
+                            title="LinkedIn"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                ></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a
+                            href="mailto:mohamedyoussefelhamaimy@gmail.com"
+                            class="footer-social-btn"
+                            aria-label="Email Mohamed"
+                            title="Email"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                ></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="copyright-text">
+                        &copy; 2026 <strong>Mohamed Youssef Elhamaimy</strong>.
+                        All rights reserved.
+                    </p>
+
+                    <!-- Back to Top Button -->
+                    <a
+                        href="#hero"
+                        class="back-to-top-btn"
+                        id="back-to-top"
+                        aria-label="Back to top"
+                    >
+                        <span>Back to Top</span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <line x1="12" y1="19" x2="12" y2="5"></line>
+                            <polyline points="5 12 12 5 19 12"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Toast Notification Container -->
+        <div
+            class="toast-notification"
+            id="toast"
+            role="status"
+            aria-live="polite"
+        >
+            <span class="toast-icon">✓</span>
+            <span class="toast-message" id="toast-msg"
+                >Email copied to clipboard!</span
+            >
+        </div>
+
+        <!-- JavaScript -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
