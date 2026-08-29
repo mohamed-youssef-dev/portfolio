@@ -2190,6 +2190,8 @@ svg {
     border: 1px solid var(--border-subtle);
     border-radius: var(--border-radius-md);
     transition: border-color var(--transition-fast);
+    overflow: hidden;
+    min-width: 0;
 }
 
 .contact-method-item:hover {
@@ -2226,7 +2228,8 @@ svg {
     font-size: 0.925rem;
     font-weight: 600;
     color: var(--text-primary);
-    white-space: nowrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -2614,6 +2617,24 @@ svg {
     .hide-mobile {
         display: none;
     }
+
+    /* Contact section: constrain cards to viewport width on mobile */
+    .contact-section .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .contact-grid {
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .contact-info-card,
+    .contact-form-card {
+        width: 100%;
+        padding: 1.5rem 1.25rem;
+        box-sizing: border-box;
+    }
 }
 
 @media (max-width: 480px) {
@@ -2628,6 +2649,15 @@ svg {
     .contact-info-card,
     .contact-form-card {
         padding: 1.75rem 1.25rem;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    /* Reduce container padding on very small screens to give content more room */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .hero-cta-group {
